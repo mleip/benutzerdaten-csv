@@ -9,4 +9,14 @@
   table th {
     text-align: left;
   }
-  
+body {
+    background-color: #073045;
+    color: white;
+} 
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; 
+    z-index: 1000; 
+}
