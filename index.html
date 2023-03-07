@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-DE">
 <head>
   <meta charset="UTF-8">
   <title>Benutzerdaten</title>
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <div class="container">
     <img src="logo.jpg" class="logo" alt="Techstarter">
     <h1>Benutzerdaten</h1>
@@ -27,18 +28,20 @@
       <div class="form-group">
         <label for="phone">Telefon:</label>
         <input type="tel" class="form-control" id="phone" name="phone">
+        <p>&copy; Michael Leipner 2023</p>
       </div>
+      <div class="float-left">
       <button type="submit" class="btn btn-primary">Hinzufügen</button>
-      <button type="button" class="btn btn-secondary" onclick="downloadCsv()">CSV herunterladen</button>
-    </form>
-    <footer>
-        <text-muted>&copy; Michael Leipner 2023</text-muted>
-      </footer>
-    <div id="output"></div>
-  </div>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      </div>
+      <div class="float-right">
+      <button type="button" class="btn btn-primary" onclick="downloadCsv()">CSV herunterladen</button>
+    </div>
+  </form>
+  <div id="output"></div>
+</div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -50,4 +53,3 @@
   <script src="index.js"></script>
 </body>
 </html>
-
